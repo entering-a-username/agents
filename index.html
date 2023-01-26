@@ -7,46 +7,46 @@
     <title>Agent Generator</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body>
+<body class="bg-slate-100">
     <header class="text-center mt-32">
-        <span class="text-[2rem] tracking-widest font-bold">Our Agents</span>
-        <div class="underline h-[0.25rem] w-[5rem] ml-auto mr-auto mt-2 bg-green-700"></div>
+        <span class="text-[2.5rem] tracking-widest font-bold">Our Agents</span>
+        <div id="underlineID" class="underline h-[0.25rem] w-[5rem] ml-auto mr-auto mt-2 "></div>
     </header>
 
     <main class="mt-16 flex justify-center">
-        <div class="shadow-md rounded-md w-[75%]">
+        <div class="shadow-lg rounded-md w-[650px] bg-white">
             <div class="flex justify-center">
-                <div class="h-[200px] w-[200px] relative border rounded-full bg-green-700">
-                    <img src="viper.webp" class="border rounded-full absolute right-2 top-2" alt="">
-                    <div class="h-[45px] w-[45px] absolute border rounded-full bg-green-700 top-5 text-white"></div>
+                <div id="circleID" class="h-[150px] w-[150px] mt-4 relative border rounded-full">
+                    <img id="agentimgID" src="" class="rounded-full absolute right-4 top-6 w-32 h-32" alt="">
+                    <div id="smallcircleID" class="h-[43px] w-[43px] absolute border-green-600 rounded-full top-5">
+                        <img id="agentlogoID" src="" alt="">
+                    </div>
                 </div>
-                
             </div>
 
 
             <div class="flex justify-center items-center flex-col mt-4">
-                <span class="tracking-widest">Sabine Callas</span>
-                <span class="text-green-700">Scientist</span>
-                <p>Viper is a VALORANT agent who deals with poison and acid, burning down and suffocating her enemies. She uses fuel to activate her powerful abilities Poison Cloud and Toxic Screen to melt passing targets and block vision. The fuel gauge recharges over time, allowing Viper to control areas for extended time</p>
+                <span id="nameID" class="tracking-widest font-bold"></span>
+                <span id="professionID" class="text-green-700 uppercase font-bold tracking-widest"></span>
+                <p id="textID" class="w-[550px] text-green-900 mt-2 text-base text-center">
             
             </div>
             
-            <div class="flex justify-center items-center">
-                <svg class="w-6 h-6 text-green-600 cursor-pointer" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <div class="flex justify-center items-center mt-2">
+                <svg id="svg1" class="w-6 h-6 text-green-600 cursor-pointer hover:text-green-800" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"></path>
                 </svg>
-                <svg class="w-6 h-6 text-green-600 cursor-pointer" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <svg id="svg2" class="w-6 h-6 text-green-600 cursor-pointer hover:text-green-800" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
                 </svg>
             </div>
 
-            <div class="flex justify-center"><button>Surprise Me</button></div>
+            <div class="flex justify-center mt-2 mb-6"><button id="randomBtnID" class="border-2 rounded-lg
+                border-green-700 pr-2 pl-2 pt-[1.5px] pb-[1.5px] text-sm text-green-700
+                bg-green-100 shadow-sm hover:text-black hover:bg-green-700 hover:duration-700 hover:shadow-md hover:shadow-green-200">Surprise Me</button></div>
 
         </div>
-
-
     </main>
-
 
     <script src="script.js"></script>
 </body>
